@@ -47,6 +47,10 @@ app.get('/test', (req,res) => {
   res.render('home.ejs', { jobCategories: 'aJobCategories', assetLink: '/public' });
 })
 
+app.get('/', (req,res) => {
+  res.render('home.ejs', { jobCategories: 'aJobCategories', assetLink: '/public' });
+})
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
